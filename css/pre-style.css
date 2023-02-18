@@ -1,0 +1,253 @@
+html {
+  font-size: 10px;
+  font-family: Montserrat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.666%;
+}
+
+.col-10 {
+  width: 83.333%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.666%;
+}
+
+.col-7 {
+  width: 58.333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.666%;
+}
+
+.col-4 {
+  width: 33.333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.666%;
+}
+
+.col-1 {
+  width: 8.333%;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.ml-60 {
+  margin-left: 60px;
+}
+
+.mr-60 {
+  margin-right: 60px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pt-21 {
+  padding-top: 21px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.grey-text {
+  color: #B3B3BA;
+}
+
+.accent {
+  color: #F0145A;
+}
+
+.regular {
+  color: #24A3FF;
+}
+
+.main-alt {
+  color: #46466E;
+}
+
+.main-regular {
+  color: #323264;
+}
+
+.deepblu {
+  background-color: #1C4280;
+}
+
+.deepgreen {
+  background-color: #143646;
+}
+
+.orange {
+  background-color: #F48B30;
+}
+
+.purple {
+  background-color: #9E4DC3;
+}
+
+.lightorange {
+  background-color: #FD9339;
+}
+
+.cligrey {
+  background-color: #E2E2E4;
+}
+
+.cherry {
+  background-color: #C71C36;
+}
+
+.lightblu {
+  background-color: #DCF3F9;
+}
+
+.greyz {
+  background-color: #EAEAEA;
+}
+
+.midnight {
+  background-color: #282240;
+}
+
+.darkblue {
+  background-color: #1D4568;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.space-bt {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 3.8rem;
+  line-height: 4.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+}

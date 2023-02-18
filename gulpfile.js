@@ -1,124 +1,44 @@
-'use strict';
+var gulp = require('gulp')
+var browserSync = require('browser-sync').create();
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
+const sass = require('gulp-sass')(require('sass'));
+// const autoprefixer = require('gulp-autoprefixer');
 
-    let project_folder ='dist';
-    let source_folder ='src';
+gulp.task('sass', function(done) {
+    gulp.src("sass/*.sass")
+        .pipe(sass())
+        .pipe(gulp.dest("css"))
+        .pipe(browserSync.stream());
+    done();
+});
 
-    let path={
-        build:{
-            html: project_folder+'/',
-            css: project_folder+'/',
-            img: project_folder+'/images/',
-            js: project_folder+'/js/',
-            fonts: project_folder+'/fonts/',
-        },
-        src:{
-            html: [source_folder+'/*.html', '!' +source_folder + '/_*.html'],
-            css: source_folder+'/**/style.sass',
-            img: source_folder+'/images/*.*',
-            js: source_folder+'/js/*.js',
-            fonts: source_folder+'/fonts/*.ttf',
-        },
-        watch:{
-            html: source_folder+'/**/*.html',
-            css: source_folder+'/**/*.sass',
-            img: source_folder+'/images/*.*',
-            js: source_folder+'/js/*.js',
-        },
-        clean:'./' + project_folder + '/'
-    }
+gulp.task('serve', function(done) {
+    browserSync.init({
+        server: "3004"
+    });
+    gulp.watch("sass/*.sass", gulp.series('sass'));
+    gulp.watch("*.html").on('change', () => {
+        browserSync.reload();
+        done();
+    });
 
-let {src,dest} = require('gulp'),
-    gulp = require('gulp'),
-    browsersync = require('browser-sync').create(),
-    fileinclude = require('gulp-file-include'),
-    del = require('del'),
-    clean_css = require('gulp-clean-css'),
-    rename = require('gulp-rename'),
-    webp = require('gulp-webp');
+    done();
+});
 
-const
-    sass = require('gulp-sass')(require('sass')),
-    autoprefixer = require('gulp-autoprefixer');
+gulp.task('default', function () {
+    gulp.src('**/main.css')
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('css'));
+});
 
-    function browserSync(params){
-        browsersync.init({
-            server:{
-                baseDir:'./' + project_folder + '/'
-            },
-            port:3000,
-            notify: false
-        })
-    }
+// exports.default = () => (
+// 	gulp.src('css/*.css')
+// 		.pipe(autoprefixer({
+// 			cascade: false
+// 		}))
+// 		.pipe(gulp.dest('css'))
+// );
 
-    function html(){
-        return src(path.src.html)
-            .pipe(fileinclude())
-            .pipe(dest(path.build.html))
-            .pipe(browsersync.stream())
-    }
-    function js(){
-        return src(path.src.js)
-            .pipe(dest(path.build.js))
-            .pipe(browsersync.stream())
-    }
-    function images(){
-        return src(path.src.img)
-            .pipe(
-                webp({
-                    quality:70
-                })
-            )
-            .pipe(dest(path.build.img))
-            .pipe(browsersync.stream())
-    }
-    function fonts(){
-        return src(path.src.fonts)
-            .pipe(dest(path.build.fonts))
-            .pipe(browsersync.stream())
-    }
-    function watchFiles(params) {
-        gulp.watch([path.watch.html], html);
-        gulp.watch([path.watch.css], css);
-        gulp.watch([path.watch.js], js);
-        gulp.watch([path.watch.img], images);
-    }
-
-    function clean(params) {
-        return del(path.clean);
-    }
-
-    function css(){
-        return src(path.src.css)
-            .pipe(
-                sass({
-                    outputStyle: 'expanded'
-                })
-            )
-            .pipe(
-                autoprefixer({
-                    overrideBrowserslist:['last 5 versions'],
-                    cascade:true
-                })
-            )
-            .pipe(dest(path.build.css))
-            .pipe(clean_css())
-            .pipe(
-                rename({
-                    extname:'.min.css'
-                })
-            )
-            .pipe(dest(path.build.css))
-            .pipe(browsersync.stream())
-    }
-
-    let build= gulp.series(clean,gulp.parallel(js,css,html,images,fonts));
-    let watch= gulp.parallel(build,watchFiles,browserSync);
-
-    exports .fonts = fonts;
-    exports .images = images;
-    exports .js = js;
-    exports .css = css;
-    exports .html = html;
-    exports .build = build;
-    exports .watch = watch;
-    exports.default = watch;
+gulp.task('default', gulp.series('sass', 'serve'));
