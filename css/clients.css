@@ -1,0 +1,60 @@
+.clients__container {
+  max-width: 1720px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 1440px) {
+  .clients__container {
+    padding-bottom: 0px;
+  }
+}
+.clients__container .clients-title {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #323264;
+  text-transform: uppercase;
+}
+.clients__container .clients-logo-holder {
+  border-radius: 12px 12px 12px 12px !important;
+  overflow: hidden !important;
+}
+@media screen and (max-width: 1440px) {
+  .clients__container .clients-logo-holder {
+    border-radius: 0px !important;
+  }
+}
+.clients__container .clients-logo-holder .clients-img {
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 950px) {
+  .clients__container .clients-logo-holder .clients-img {
+    width: 33.333%;
+  }
+}
+@media screen and (max-width: 950px) and (max-width: 700px) {
+  .clients__container .clients-logo-holder .clients-img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 950px) and (max-width: 700px) and (max-width: 500px) {
+  .clients__container .clients-logo-holder .clients-img {
+    width: 100%;
+  }
+}
+.clients__container .clients-logo-holder .invisible {
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  .clients__container .clients-logo-holder .invisible {
+    display: none;
+  }
+}
+
+.clients-img-link:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}

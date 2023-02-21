@@ -1,0 +1,35 @@
+.clients__container
+    max-width: 1720px
+    margin: 0 auto
+    padding-bottom: 60px
+    @media screen and ( max-width:1440px  )
+       padding-bottom: 0px 
+    .clients-title
+        font-size: 1.4rem
+        line-height: 1.7rem
+        letter-spacing: 1px
+        text-align: center
+        color: #323264
+        text-transform: uppercase
+    .clients-logo-holder
+        border-radius: 12px 12px 12px 12px !important
+        overflow: hidden !important
+        @media screen and ( max-width:1440px  )
+           border-radius: 0px !important 
+        .clients-img
+            height: 120px
+            justify-content: center
+            align-items: center
+            @media screen and ( max-width:950px  )
+                width: 33.333%
+                @media screen and ( max-width:700px  )
+                    width: 50%
+                    @media screen and ( max-width:500px  )
+                        width: 100%
+        .invisible
+            display: flex
+            @media screen and ( max-width:500px  )
+                display: none
+.clients-img-link:hover
+    transform: scale(1.2)
+    transition: transform 0.5s

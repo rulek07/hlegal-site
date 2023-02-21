@@ -1,9 +1,14 @@
 @charset "UTF-8"
 
 @import "pre-style"
+@import "header"
+@import "footer"
+@import "services"
+@import "clients"
+@import "publications"
 $supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%)
 $grey: #E6E6F0
-$graytext: #B3B3BA
+$greytext: #B3B3BA
 $white: #FFFFFF
 $accent: #F0145A
 $regular: #24A3FF
@@ -12,14 +17,12 @@ $red: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
 $main-alt: #46466E
 $main-regular: #323264
 
-
 .container-color
     max-width: 1920px
     margin: 0 auto 20px auto
     background: $supersoft
     border-radius: 0px 0px 12px 12px
-    position: relative
-    
+    position: relative   
 .underborder1
     position: absolute
     display: block
@@ -42,117 +45,151 @@ $main-regular: #323264
     right: 40px
     background-color:#E7E7F2
     border-radius: 0px 0px 12px 12px
-
-.wrapper__header
-    max-width: 1630px
-    margin: 0 auto
-    padding: 50px 15px 0px 15px
-    .header__logo__holder
-        margin: 0 15px
-    .header__menu
-        margin: 0 15px
-        .header__menu-apper
-            text-align: center
-            padding: 0px 0px 15px 0px
-        .header__menu-apper-link
-            font-size: 16px
-            line-height: 20px
-            text-align: center
-        .header__menu-button
-            font-size: 1.2rem
-            line-height: 1.5rem
-            letter-spacing: 1px
-            padding: 5px 7px
-        .header__menu__bottom-list
-            column-gap: 16px
-        .header__menu-link
-            font-size: 16px
-            line-height: 20px
-            text-align: center   
-        .separator::before
-            background: $grey
-            content: ""
-            width: 6px
-            height: 6px
-            border-radius: 50%
-            margin: 0 6px
-#button-1.active
-    background: $accent
-    border-radius: 8px
-    transition: 0.5s
-#button-2.active
-    background: $accent
-    border-radius: 8px
-    transition: 0.5s
-#button-3.active
-    background: $accent
-    border-radius: 8px
-    transition: 0.5s
-.header__menu-button:hover
-    background: rgba(255, 255, 255, 0.2)
-    border-radius: 8px
-    transition: 0.5s
-.header__menu-apper-link:hover
-    color: $accent
-    transition: 0.5s     
-#header-facebook
-    path:hover
-        fill: $accent
-        transition: 0.5s
-    
-    
-.header__menu-link:hover
-    color: $accent
-    transition: 0.5s
-.header__menu-link::after
-   content: ''
-   display: block
-   width: 100%
-   height: 2px
-   margin-top: 2px
-   transform: scaleX(0)
-   background-color: $accent
-   transition: 0.3s
-.header__menu-link:hover::after
-   transform: scaleX(1)
-     
+.container
+    max-width: 1920px
+    margin: 0 auto 60px auto
+    @media screen and ( max-width:620px  )
+        margin: 0 auto
 .main__logo-first
-    width: 445px
+    width: 445.11px
     position: absolute
     top: 0
-    left: 524px
+    right: 49.5%
+    @media screen and ( max-width:1440px  )
+        width: 355.64px
+        @media screen and ( max-width:1024px  )
+            width: 341.85px
+            @media screen and ( max-width:768px  )
+                width: 455.8px
+                @media screen and ( max-width:600px  )
+                    width: 267.07px
     .main__logo-second
         position: absolute
-        width: 476px
-        top: 426px
-        left: 250px
+        width: 476.4px
+        top: 425.53px
+        left: 251.56px
+        @media screen and ( max-width:1440px  )
+            width: 380.64px
+            top: 340px
+            left: 201px
+            @media screen and ( max-width:1024px  )
+                width: 365.87px
+                top: 326.81px
+                left: 193.2px
+                @media screen and ( max-width:768px  )
+                    width: 487.83px
+                    top: 435.74px
+                    left: 257.6px
+                    @media screen and ( max-width:600px  )
+                        width: 285.84px
+                        top: 255.32px
+                        left: 150.94px 
         .main__logo-title
             position: absolute
-            widows: 555px
+            width: 555px
             font-size: 3.8rem
             line-height: 4.6rem
             top: 52px
             left: -90px
             color: $white
+            @media screen and ( max-width:1440px  )
+                top: 36px
+                left: -122px
+                @media screen and ( max-width:1024px  )
+                    left: -134px
+                    @media screen and ( max-width:768px  )
+                        top: 56px
+                        left: -87px 
+                        @media screen and ( max-width:760px  )
+                            top: -21px
+                            left: 100px
+                            width: 190px
+                            @media screen and ( max-width:600px  )
+                                top: -23px
+                                left: 20px
+                                width: 190px
         .main__logo-scroll
             position: absolute
             width: 42px
             bottom: 29px
             left: 164px
-
+            @media screen and ( max-width:1440px  )
+               left: 130px
+               @media screen and ( max-width:1024px  )
+                    left: 114px
+                    @media screen and ( max-width:768px  )
+                        left: 165px
+                        @media screen and ( max-width:600px  )
+                            left: 100px
 #scroll:hover
     circle, path
         stroke: $accent
         transition: 0.5s    
 
 .main__strategy__wrapper
-    max-width: 1390px
+    max-width: 1700px
     margin: 0 auto
-    padding: 94.3rem 80px 0px 15px
+    padding: 94.3rem 0px 0px 0px
+    @media screen and ( max-width:1440px  )
+        padding: 74.1rem 0px 0px 0px
+        @media screen and ( max-width:1024px  )
+            padding: 71rem 0px 0px 0px 
+            @media screen and ( max-width:1020px  )
+                flex-direction: column
+                padding: 68rem 0px 0px 0px
+                @media screen and ( max-width:900px  )
+                    padding: 57rem 0px 0px 0px
+                    @media screen and ( max-width:768px  )
+                        padding: 83rem 0px 0px 0px
+                        @media screen and ( max-width:620px  )
+                            padding: 96rem 0px 0px 0px
+                            @media screen and ( max-width:600px  )
+                                padding: 53rem 0px 0px 0px
+    .main__strategy
+        flex-direction: row
+        flex: 1 1 100%
+        padding: 15px 0px 15px 60px
+        display: none
+        @media screen and ( max-width:1020px  )
+            display: block
+            max-height: 66px
+            overflow: hidden
+            @media screen and ( max-width:700px  )
+                padding: 15px 0px 15px 30px
+        .main__strategy-title-1
+            font-size: 3.8rem
+            line-height: 4.6rem
+            padding: 0 15px
+            background: $red-reversed
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            width: 215px !important
+        .main__strategy-title-2
+            font-size: 3.8rem
+            line-height: 4.6rem
+            padding: 0 15px  
+            width: 375px !important        
+        .main__strategy-title-3
+            font-size: 3.8rem
+            line-height: 4.6rem
+            padding: 0 15px
+            width: 210px !important
+        .main__strategy-title-4
+            font-size: 3.8rem
+            line-height: 4.6rem
+            padding: 0 15px
+            width: 360px !important
     .main__strategy-left
+        flex-direction: column
+        flex: 1 1 33.333%
         align-items: flex-end
-        padding: 15px 60px 15px 0px
-        border-right: 4px solid $graytext
+        padding: 15px 60px
+        @media screen and ( max-width:1440px  )
+            flex: 1 1 41.666%
+            @media screen and ( max-width:1210px  )
+                flex: 1 1 48.5%
+                @media screen and ( max-width:1020px  )
+                    display: none
         .main__strategy-title-upper
             font-size: 3.8rem
             line-height: 4.6rem
@@ -163,11 +200,37 @@ $main-regular: #323264
             font-size: 3.8rem
             line-height: 4.6rem
     .main__strategy-right
+        flex: 1 1 66.666%
         padding-left: 60px
-        padding-top: 75px
+        padding-right: 60px
+        padding-top: 73px
+        border-left: 4px solid $greytext
+        @media screen and ( max-width:1440px  )
+            flex: 1 1 58.333%
+            padding-top: 43px
+            @media screen and ( max-width:1210px  )
+                flex: 1 1 51.5%
+                padding-top: 9.5px
+                @media screen and ( max-width:1020px  )
+                    flex: 1 1 100%
+                    padding-top: 60px
+                    border-left: 0px solid $greytext
+                    border-top: 4px solid $greytext
+                    padding-left: 0px
+                    padding-right: 0px
+                    margin-left: 60px
+                    margin-right: 60px
+                    @media screen and ( max-width:700px  )
+                        margin-left: 30px
+                        margin-right: 30px
         .main__strategy-description
+            padding-right: 80px
             font-size: 1.9rem 
             line-height: 3rem
+            @media screen and ( max-width:1440px  )
+                padding-right: 115px
+                @media screen and ( max-width:1210px  )
+                    padding-right: 0px
 .main__strategy-title-upper:hover
     background: $red
     -webkit-background-clip: text
@@ -178,6 +241,22 @@ $main-regular: #323264
     color: $accent
     transition: 0.5s
     cursor: pointer
+.main__strategy-title-1:hover
+    color: $accent
+    transition: 0.5s
+    cursor: pointer
+.main__strategy-title-2:hover
+    color: $accent
+    transition: 0.5s
+    cursor: pointer
+.main__strategy-title-3:hover
+    color: $accent
+    transition: 0.5s
+    cursor: pointer
+.main__strategy-title-4:hover
+    color: $accent
+    transition: 0.5s
+    cursor: pointer   
 #showed-content-1
     display: none
 #showed-content-2
@@ -194,46 +273,23 @@ $main-regular: #323264
     display: block
 #showed-content-4.show
     display: block
+#showed-content-link-1.color
+    color: $accent
+#showed-content-link-2.color
+    color: $accent
+#showed-content-link-3.color
+    color: $accent
+#showed-content-link-4.color
+    color: $accent
+#showed-content-link-slick-1.color
+    color: $accent
+#showed-content-link-slick-2.color
+    color: $accent
+#showed-content-link-slick-3.color
+    color: $accent
+#showed-content-link-slick-4.color
+    color: $accent
 
-.main__services__wrapper
-    max-width: 1720px
-    margin: 0 auto
-    .main__services-navigation
-        margin: 0 60px
-        .main__services-link
-            font-size: 1.4rem
-            line-height: 1.7rem
-            letter-spacing: 1px
-        .main__services-title
-            padding-top: 11px
-            background: $red
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent 
-    .main__services__card-holder
-        margin: 0 30px
-        .services-card-shell
-            padding: 0px 30px 0px 30px
-            .main__services-card-icon
-                width: 18.5%
-                background: $white
-                border-radius: 24px
-                .card-icon
-                    padding: 13px
-            .main__services-card-title
-                font-size: 2.2rem
-                line-height: 2.7rem
-                height: 5.5rem
-                overflow: hidden
-            .main__services-card-description
-                font-size: 1.6rem
-                line-height: 2.6rem
-.main__services-card-title:hover
-    color: $accent
-    transition: 0.5s
-    cursor: pointer
-.main__services-link:hover
-    color: $accent
-    transition: 0.5s
 
 .team__container
     max-width: 1720px
@@ -241,36 +297,54 @@ $main-regular: #323264
     padding-bottom: 44px
     .team__wrapper
         position: relative
-        .team__swyper__card-foto
-            width: 400px
-            height: 298px
-            overflow: hidden
-            border-radius: 12px 0px 0px 12px
-            img
-                object-fit: cover
-                width: 100%
-                height: 100%
-        .team__swyper__card-description
-            background: #F5F5FA
-            border-radius: 0px 12px 12px 0px
-            .team__swyper__card-link
-                font-size: 1.4rem
-                line-height: 1.7rem 
-                letter-spacing: 1px
-                text-transform: uppercase   
-            .team__swyper__card-title
-                background: $red
-                -webkit-background-clip: text
-                -webkit-text-fill-color: transparent
-                padding-top: 5px
-            .team__swyper__card-name
-                font-size: 1.6rem
-                line-height: 2rem  
-            .team__swyper_card-position
-                font-size: 1.4rem
-                line-height: 2.2rem
-                padding-top: 6px
-            
+        @media screen and ( max-width:700px  )
+            margin-left: 30px !important
+            margin-right: 30px !important
+            padding-top: 30px !important
+        .team__swyper-card
+            @media screen and ( max-width:900px  )
+                flex-direction: column
+            .team__swyper__card-foto
+                width: 400px
+                height: 298px
+                overflow: hidden
+                border-radius: 12px 0px 0px 12px
+                @media screen and ( max-width:1500px  )
+                    height: 344px
+                    @media screen and ( max-width:1370px  )
+                        height: 528px
+                        @media screen and ( max-width:900px  )
+                            width: 100%
+                            height: 500px
+                            border-radius: 12px 12px 0px 0px
+                img
+                    object-fit: cover
+                    width: 100%
+                    height: 100%
+            .team__swyper__card-description
+                background: #F5F5FA
+                border-radius: 0px 12px 12px 0px
+                @media screen and ( max-width:900px  )
+                    width: 100%
+                    border-radius: 0px 0px 12px 12px
+                .team__swyper__card-link
+                    font-size: 1.4rem
+                    line-height: 1.7rem 
+                    letter-spacing: 1px
+                    text-transform: uppercase   
+                .team__swyper__card-title
+                    background: $red
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    padding-top: 5px
+                .team__swyper__card-name
+                    font-size: 1.6rem
+                    line-height: 2rem  
+                .team__swyper_card-position
+                    font-size: 1.4rem
+                    line-height: 2.2rem
+                    padding-top: 6px
+                    padding-bottom: 30px          
 .team__swyper__card-link:hover
     color: $accent
     transition: 0.5s
@@ -279,127 +353,6 @@ $main-regular: #323264
 .swiper-pagination-bullet
     width: 16px !important
     height: 16px !important
-    margin: 0 7.5px !important
-
-.clients__container
-    max-width: 1720px
-    margin: 0 auto
-    padding-bottom: 60px
-    .clients-title
-        font-size: 1.4rem
-        line-height: 1.7rem
-        letter-spacing: 1px
-        text-align: center
-        color: #323264
-        text-transform: uppercase
-    .clients-logo-holder
-        border-radius: 12px 12px 12px 12px !important
-        overflow: hidden !important
-        .clients-img
-            height: 120px
-            justify-content: center
-            align-items: center
-.clients-img-link:hover
-    transform: scale(1.2)
-    transition: transform 0.5s
-
-.publications__container
-    background: #F5F5FA
-    .publications__wrapper
-        max-width: 1600px
-        margin: 0 auto
-        padding: 0 60px
-        .publications__link
-            font-size: 1.4rem
-            line-height: 1.7rem 
-            letter-spacing: 1px
-            text-transform: uppercase 
-        .publications__title
-            background: $red
-            -webkit-background-clip: text
-            -webkit-text-fill-color: transparent
-            padding-top: 10px
-        .publications__card-holder
-            border-bottom: 2px solid #E6E6F0
-            column-gap: 30px
-            .publications__card
-                flex: 1 1 25%
-                border-radius: 8px
-                overflow: hidden 
-                .publications__card-text
-                    padding: 30px
-                    background: #FFFFFF
-                    .publications__card-link-holder
-                        height: 40px
-                        overflow: hidden
-                    .publications__card-link
-                        font-size: 1.6rem
-                        line-height: 2rem
-                    .publications__card-date
-                        font-size: 1.2rem
-                        line-height: 1.5rem
-                        letter-spacing: 1px
-                        text-transform: uppercase
-                        border-bottom: 4px solid #E6E6F0
-                    .publications__card-description
-                        font-size: 1.4rem
-                        line-height: 2.2rem
-                        height: 65px
-                        overflow: hidden
-.publications__link:hover
-    color: $accent
-    transition: 0.5s
-.publications__card-link:hover
-    color: $accent
-    transition: 0.5s
-.publications__card-img img:hover
-    transform: scale(1.1)
-    transition: transform 0.5s
-
-.footer__container
-    background: #F5F5FA
-    .footer__wrapper
-        max-width: 1600px
-        margin: 0 auto
-        padding: 30px
-        .footer__policy
-            font-size: 1.6rem
-            line-height: 2rem
-        .footer__menu-apper-map
-            font-size: 1.6rem
-            line-height: 2rem
-        .footer__menu-apper-link
-            font-size: 1.2rem
-            line-height: 1.5rem
-            letter-spacing: 1px
-            text-transform: uppercase
-        .footer__menu-bottom-num
-            font-size: 1.6rem
-            line-height: 2rem
-        .footer__menu-bottom-mail
-            font-size: 1.6rem
-            line-height: 2rem
-        .separator-footer::before
-            background: #B3B3BA
-            content: ""
-            width: 6px
-            height: 6px
-            border-radius: 50%
-            margin: 0 10px
-.footer__menu-apper-map:hover
-    color: $accent
-    transition: 0.5s
-.footer__menu-apper-link:hover
-    color: $accent
-    transition: 0.5s
-.footer__menu-bottom-num:hover
-    color: $accent
-    transition: 0.5s
-.footer__menu-bottom-mail:hover
-    color: $accent
-    transition: 0.5s
-#footer-facebook
-    path:hover
-        fill: $accent
-        transition: 0.5s
-        
+    margin: 0 7.5px !important 
+.team__swyper__card-name:hover
+    color: $accent     
