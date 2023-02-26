@@ -1,0 +1,123 @@
+.article__container
+    max-width: 1720px
+    margin: 0 auto
+    .article__wrapper
+        margin: 0 180px
+        @media screen and ( max-width:1400px  )
+            margin: 0 165px
+            @media screen and ( max-width:1350px  )
+                margin: 0 150px
+                @media screen and ( max-width:1300px  )
+                    margin: 0 135px
+                    @media screen and ( max-width:1250px  )
+                        margin: 0 120px
+                        @media screen and ( max-width:1200px  )
+                            margin: 0 105px
+                            @media screen and ( max-width:1150px  )
+                                margin: 0 90px
+                                @media screen and ( max-width:1100px  )
+                                    margin: 0 75px
+                                    @media screen and ( max-width:1024px  )
+                                        margin: 0 60px
+                                        @media screen and ( max-width:768px  )
+                                            flex-direction: column
+                                            @media screen and ( max-width:620px  )
+                                                margin: 0 30px
+                                                padding-bottom: 30px
+                                                @media screen and ( max-width:350px  )
+                                                    margin: 0 15px
+        .contact-holder
+            flex: 1 1 50%
+            @media screen and ( max-width:768px  )
+                flex: 1 1 100%
+                padding-bottom: 60px
+                @media screen and ( max-width:620px  )
+                    padding-top: 30px
+                    padding-bottom: 30px
+            .borderini
+                border-bottom: 4px solid #E6E6F0
+                margin-right: 60px
+                @media screen and ( max-width:768px  )
+                    margin-right: 0px
+                .contact-detail
+                    font-size: 2.1rem
+                    line-height: 3rem
+                    @media screen and ( max-width:350px  )
+                        font-size: 1.7rem
+                        line-height: 2rem
+            .page-link
+                font-size: 1.2rem
+                line-height: 1.6rem
+                letter-spacing: 1px 
+        .popup
+            background: #F5F5FA
+            border-radius: 12px
+            padding: 30px
+            flex: 1 1 50%
+            @media screen and ( max-width:768px  )
+                flex: 1 1 100%
+            .popup__title
+                background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                @media screen and ( max-width:500px  )
+                    font-size: 3rem
+                    line-height: 4rem
+            .popup-form
+                flex-direction: column
+                .popup-input
+                    font-size: 1.6rem
+                    line-height: 2.6rem
+                    border: 1px solid #FFFFFF
+                    outline: none
+                    color: #000000 !important
+                    border-radius: 8px
+                    background: #FFFFFF
+                    padding: 15px
+                .popup-message
+                    font-size: 1.6rem
+                    line-height: 2.6rem
+                    border: 1px solid #FFFFFF
+                    outline: none
+                    color: #000000 !important
+                    border-radius: 8px
+                    background: #FFFFFF
+                    padding: 15px 0 89px 15px
+                .popup-question
+                    font-size: 1.8rem
+                    line-height: 2.1rem
+                    letter-spacing: 1px
+                .popup-button
+                    background: #24A3FF
+                    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5)
+                    border-radius: 12px
+                    border: none
+                    font-size: 1.6rem
+                    line-height: 2rem
+                    padding: 18px
+
+.popup-button:hover
+    background: #0085FF !important
+    transition: 0.5s
+.popup-button:visited
+    background: #006CCF !important
+.popup-message:focus
+    border: 1px solid #24A3FF !important
+    transition: 0.5s
+.popup-message::placeholder
+    color: #B3B3BA
+.popup-input:focus
+    border: 1px solid #24A3FF !important
+    transition: 0.5s
+.popup-input::placeholder
+    color: #B3B3BA
+#username:invalid:not(:placeholder-shown)
+    border: 1px solid #FF0000
+#phonenumber:invalid:not(:placeholder-shown)
+    border: 1px solid #FF0000
+#e-mail:invalid:not(:placeholder-shown)
+    border: 1px solid #FF0000
+.accent-hover:hover
+    color: #F0145A
+    transition: 0.5s
+    cursor: pointer

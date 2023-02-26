@@ -95,6 +95,8 @@
         justify-content: flex-end
         @media screen and ( max-width:620px  )
             display: none
+            @media screen and ( max-width:350px  )
+                width: 205px    
         .close
             width: 32px
             position: absolute
@@ -133,6 +135,8 @@
         @media screen and ( max-width:620px  )
             width: 11.62px
             padding: 10px 4px
+            @media screen and ( max-width:300px  )
+                display: none
     .header__logo-after
         font-size: 3.6rem
         line-height: 4.4rem
@@ -140,6 +144,8 @@
             font-size: 2rem
             line-height: 2.4rem
             padding-top: 10px
+            @media screen and ( max-width:300px  )
+                display: none
     .header__menu
         position: relative
         z-index: 2
@@ -177,6 +183,7 @@
             height: 6px
             border-radius: 50%
             margin: 0 6px
+           
 #button-1.active
     background: #F0145A
     border-radius: 8px
@@ -225,19 +232,7 @@
     transition: 0.5s
 .light.active
     a
-        color: #ffffff
-.header__menu-apper-map:hover
-    color: #F0145A
-    transition: 0.5s
-.header__menu-map:hover
-    color: #F0145A
-    transition: 0.5s
-.header__menu-apper-num:hover
-    color: #F0145A
-    transition: 0.5s
-.header__menu-num:hover
-    color: #F0145A
-    transition: 0.5s       
+        color: #ffffff      
 #header-facebook:hover
     path
         fill: #F0145A
@@ -249,9 +244,6 @@
 #header-facebook
     @media screen and ( max-width:620px  )
         display: none 
-.header__menu-link:hover
-    color: #F0145A
-    transition: 0.5s
 .header__menu-link::after
     content: ''
     display: block
@@ -290,9 +282,9 @@
     margin-top: 2px
     transform: scaleX(1)
     background-color: #F0145A
-.header__menu-link.activ-link
+.accent-hover.activ-link
     color: #F0145A !important
-.link-small-2.activ-link
-    color: #F0145A !important
-.link-small-4.activ-link
-    color: #F0145A !important
+.accent-hover:hover
+    color: #F0145A
+    transition: 0.5s
+    cursor: pointer

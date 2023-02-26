@@ -1,0 +1,159 @@
+.intro__container
+    max-width: 1720px
+    margin: 0 auto
+    .intro__wrapper
+        margin: 0 180px
+        column-gap: 60px
+        @media screen and ( max-width:1024px  )
+            margin: 0 60px
+            @media screen and ( max-width:768px  )
+                flex-direction: column
+                column-gap: 0
+                @media screen and ( max-width:620px  )
+                    margin: 30px 30px 0 30px
+                    @media screen and ( max-width:320px  )
+                        margin: 30px 15px 0 15px
+        .intro__introduction
+            flex: 1 1 64%
+            @media screen and ( max-width:1024px  )
+               flex: 1 1 36% 
+        .intro__introduction-title
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            @media screen and ( max-width:500px  )
+                font-size: 3rem
+                line-height: 3.7rem
+        .intro__introduction-description
+            font-size: 1.9rem
+            line-height: 3rem
+        .intro__advantages
+            flex: 1 1 22%
+            position: relative
+            @media screen and ( max-width:768px  )
+                margin-top: 30px
+                margin-left: 30px
+            .intro__advantages-logo
+                margin-right: 10px
+            .intro__advantages-num
+                background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                font-size: 3.6rem
+                line-height: 4.4rem
+            .intro__advantages-undertext
+                font-size: 1.6rem
+                line-height: 2rem
+        .intro__advantages::before
+            position: absolute
+            content: ""
+            border-left: 4px solid #E6E6F0
+            width: 100%
+            height: 100%
+            top: 0
+            left: -30px
+            @media screen and ( max-width:1024px  )
+                height: 68% 
+                @media screen and ( max-width:768px  )
+                     height: 100%          
+.foto-team
+    max-width: 1920px
+    margin: 0 auto
+    height: auto
+    position: relative
+    @media screen and ( max-width:620px  )
+        padding-bottom: 30px !important
+        padding-top: 30px !important
+.foto-team__text
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 9.6rem
+    line-height: 11.7rem
+    letter-spacing: 63px
+    opacity: 80%
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8)
+    @media screen and ( max-width:1024px  )
+        font-size: 8.6rem
+        line-height: 10.5rem
+        @media screen and ( max-width:768px  )
+            font-size: 4.6rem
+            line-height: 5.6rem
+            @media screen and ( max-width:620px  )
+                font-size: 3.6rem
+                line-height: 4.4rem
+                letter-spacing: 13px
+.more__container
+    max-width: 1720px
+    margin: 0 auto
+    @media screen and ( max-width:620px  )
+        padding-top: 0px !important
+        padding-bottom: 30px !important
+    .more__wrapper
+        margin: 0 180px
+        column-gap: 60px
+        @media screen and ( max-width:1024px  )
+            margin: 0 60px
+            @media screen and ( max-width:768px  )
+                flex-direction: column
+                @media screen and ( max-width:620px  )
+                    margin: 0 30px
+                    @media screen and ( max-width:320px  )
+                       margin: 0 15px 
+        .more__description
+            flex: 1 1 64%
+            @media screen and ( max-width:1024px  )
+                flex: 1 1 37%
+            .more__description-text
+                font-size: 1.9rem
+                line-height: 3rem
+        .more__title
+            flex: 1 1 22%
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            @media screen and ( max-width:768px  )
+                padding-top: 30px
+                @media screen and ( max-width:500px  )
+                    font-size: 3rem
+                    line-height: 3.7rem
+.achievements__container
+    background: #F5F5FA
+    .achievements__wrapper
+        max-width: 1720px
+        margin: 0 auto
+        position: relative
+        .achievements__title
+            font-size: 1.4rem
+            line-height: 1.7rem
+            text-align: center
+            text-transform: uppercase
+        .achievements__swyper
+            margin: 0 60px
+            .achievements__img
+                height: 110px
+                width: 370px
+                background: #ffffff
+                justify-content: center
+                align-items: center
+            .invisible-first
+                display: flex
+                @media screen and ( max-width:750px  )
+                    display: none !important
+            .invisible-second
+                display: flex
+                @media screen and ( max-width:500px  )
+                    display: none !important
+    .achievements__wrapper::before
+        position: absolute
+        content: ""
+        border-bottom: 4px solid #E6E6F0
+        height: 100%
+        top: 70px
+        left: 60px
+        right: 60px

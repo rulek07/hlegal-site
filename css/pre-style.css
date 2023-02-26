@@ -61,6 +61,10 @@ img {
   width: 8.333%;
 }
 
+.mt-15 {
+  margin-top: 15px;
+}
+
 .mt-30 {
   margin-top: 30px;
 }
@@ -81,6 +85,10 @@ img {
   margin-bottom: 60px;
 }
 
+.ml-10 {
+  margin-left: 10px;
+}
+
 .ml-16 {
   margin-left: 16px;
 }
@@ -93,8 +101,16 @@ img {
   margin-left: 60px;
 }
 
+.mr-40 {
+  margin-right: 40px;
+}
+
 .mr-60 {
   margin-right: 60px;
+}
+
+.pt-10 {
+  padding-top: 10px;
 }
 
 .pt-15 {
@@ -105,12 +121,24 @@ img {
   padding-top: 21px;
 }
 
+.pt-28 {
+  padding-top: 28px;
+}
+
 .pt-30 {
   padding-top: 30px;
 }
 
+.pt-40 {
+  padding-top: 40px;
+}
+
 .pt-60 {
   padding-top: 60px;
+}
+
+.pt-75 {
+  padding-top: 75px;
 }
 
 .pt-90 {

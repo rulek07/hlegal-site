@@ -1,0 +1,156 @@
+.team__container
+    max-width: 1720px
+    margin: 0 auto
+    .team__title
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        margin: 0 180px
+        @media screen and ( max-width:1000px  )
+            margin: 0 60px
+            @media screen and ( max-width:620px  )
+                margin: 30px 30px 0 30px
+                font-size: 3rem
+                line-height: 3.6rem
+                @media screen and ( max-width:320px  )
+                    margin: 30px 15px 0 15px
+    .team__card-holder
+        margin: 0 30px
+        row-gap: 60px
+        @media screen and ( max-width:620px  )
+            margin: 0
+            row-gap: 0
+            padding-top: 0
+        .team-card
+            flex: 1 1 26%
+            padding: 60px 30px 0px 30px
+            @media screen and ( max-width:700px  )
+                flex: 1 1 100%
+                @media screen and ( max-width:620px  )
+                    padding: 30px 30px 0 30px
+                    @media screen and ( max-width:320px  )
+                       padding: 30px 15px 0 15px 
+            .team-foto-box
+                width: auto
+                height: 400px
+                overflow: hidden
+                border-radius: 12px
+                img
+                    object-fit: cover
+                    width: 100%
+                    height: 100%
+            .team-card-name
+                font-size: 1.6rem
+                line-height: 2rem
+            .team-card-position
+                font-size: 1.4rem
+                line-height: 2.2rem
+                padding-top: 5px
+            .arrow-box
+                width: 32px
+                height: 32px
+                border-radius: 50%
+                background: #EDEDF7
+                #team-arrow
+                    padding: 8px 12px
+.team__entry__wrapper
+    margin: 0 180px
+    column-gap: 60px
+    @media screen and ( max-width:1400px  )
+        margin: 0 60px
+        @media screen and ( max-width:800px  )
+           column-gap: 30px 
+           padding-bottom: 30px
+           @media screen and ( max-width:620px  )
+                margin: 0 30px
+                flex-direction: column
+                padding-top: 30px
+                padding-bottom: 0
+    .entry-foto
+        width: 400px
+        height: 500px
+        overflow: hidden
+        border-radius: 12px
+        @media screen and ( max-width:1400px  )
+            width: 300px
+            height: 375px
+            @media screen and ( max-width:620px  )
+                width: 100%
+                @media screen and ( max-width:320px  )
+                    height: 300px
+        img
+            object-fit: cover
+            width: 100%
+            height: 100%
+    .entry-description-holder
+        flex: 1 1 65%
+        @media screen and ( max-width:800px  )
+           flex: 1 1 50% 
+        .entry-title
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            @media screen and ( max-width:800px  )
+                padding-top: 120px
+                @media screen and ( max-width:620px  )
+                    padding-top: 30px
+        .entry-links-box
+            display: flex
+            @media screen and ( max-width:1400px  )
+                flex-direction: column
+            .entry-position
+                font-size: 1.4rem
+                line-height: 2.2rem
+            .entry-link    
+                font-size: 1.6rem
+                line-height: 2rem
+                @media screen and ( max-width:1400px  )
+                    padding-top: 10px
+            .separator-team::before
+                background: #E6E6F0
+                content: ""
+                width: 6px
+                height: 6px
+                border-radius: 50%
+                margin: 0 10px
+                @media screen and ( max-width:1400px  )
+                    display: none
+        .entry-description-box
+            border-top: 4px solid #E6E6F0
+            @media screen and ( max-width:800px  )
+                display: none
+            .entry-description
+                font-size: 1.6rem
+                line-height: 2.6rem
+            .entry-subtitle
+                font-size: 1.4rem
+                line-height: 1.7rem
+                letter-spacing: 1px
+.team__wrapper-second
+    margin: 0 60px
+    display: none
+    @media screen and ( max-width:800px  )
+        display: block
+        @media screen and ( max-width:620px  )
+            margin: 0 30px
+    .entry-description-box-second
+        border-top: 4px solid #E6E6F0
+        .entry-description
+            font-size: 1.6rem
+            line-height: 2.6rem
+        .entry-subtitle
+            font-size: 1.4rem
+            line-height: 1.7rem
+            letter-spacing: 1px 
+
+.accent-hover:hover
+    color: #F0145A
+    transition: 0.5s
+    cursor: pointer
+.arrow-box:hover
+    background: #EDEDF7 !important
+    transition: 0.5s
+    svg
+        path
+            stroke: #F0145A
+            transition: 0.5s

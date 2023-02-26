@@ -33,12 +33,4 @@ gulp.task('default', function () {
         .pipe(gulp.dest('css'));
 });
 
-// exports.default = () => (
-// 	gulp.src('css/*.css')
-// 		.pipe(autoprefixer({
-// 			cascade: false
-// 		}))
-// 		.pipe(gulp.dest('css'))
-// );
-
 gulp.task('default', gulp.series('sass', 'serve'));

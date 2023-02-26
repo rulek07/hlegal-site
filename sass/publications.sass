@@ -6,17 +6,23 @@
         padding: 0 60px
         @media screen and ( max-width:700px  )
             padding: 0 30px
+            @media screen and ( max-width:350px  )
+                padding: 0 15px
         .publication__slider-box
             background: #E6E6F0
             border-radius: 12px
             width: 233px
             height: 42px
             margin: 0 auto
+            @media screen and ( max-width:350px  )
+                width: 207px
             .slider-link-holder-1
                 border-radius: 12px
                 margin: 2px
                 padding: 8px 30px
                 background: #FFFFFF
+                @media screen and ( max-width:350px  )
+                    padding: 8px 25px
                 .publication__slider-link
                     text-align: center
                     font-size: 1.6rem
@@ -25,6 +31,8 @@
                 border-radius: 12px
                 margin: 2px 2px 2px 0
                 padding: 8px 30px
+                @media screen and ( max-width:350px  )
+                    padding: 8px 23px
                 .publication__slider-link
                     text-align: center
                     font-size: 1.6rem
@@ -39,6 +47,9 @@
             -webkit-background-clip: text
             -webkit-text-fill-color: transparent
             padding-top: 10px
+            @media screen and ( max-width:350px  )
+                font-size: 3rem
+                line-height: 4rem
         .publications__card-holder
             border-bottom: 2px solid #E6E6F0
             column-gap: 30px
@@ -59,6 +70,8 @@
                 .publications__card-text
                     padding: 30px
                     background: #FFFFFF
+                    @media screen and ( max-width:350px  )
+                        padding: 30px 15px
                     .publications__card-link-holder
                         height: 40px
                         overflow: hidden
@@ -115,19 +128,121 @@
                 border-radius: 12px
                 box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5)
                 padding: 18px 30px
+                @media screen and ( max-width:350px  )
+                    padding: 18px 20px
                 .publication__underbutton-link
                     font-size: 1.6rem 
                     line-height: 2rem
+
+.article__container
+    max-width: 1720px
+    margin: 0 auto
+    .article__wrapper
+        margin: 0 180px
+        @media screen and ( max-width:1400px  )
+            margin: 0 165px
+            @media screen and ( max-width:1350px  )
+                margin: 0 150px
+                @media screen and ( max-width:1300px  )
+                    margin: 0 135px
+                    @media screen and ( max-width:1250px  )
+                        margin: 0 120px
+                        @media screen and ( max-width:1200px  )
+                            margin: 0 105px
+                            @media screen and ( max-width:1150px  )
+                                margin: 0 90px
+                                @media screen and ( max-width:1100px  )
+                                    margin: 0 75px
+                                    @media screen and ( max-width:1024px  )
+                                        margin: 0 60px
+                                        @media screen and ( max-width:600px  )
+                                            margin: 0 30px
+                                            @media screen and ( max-width:350px  )
+                                                margin: 0 15px
+        .article__title-block
+            border-bottom: 4px solid #E6E6F0
+            .title-block__foto-holder
+                overflow: hidden
+                border-radius: 12px
+                img
+                    height: 500px
+                    object-fit: cover
+                    object-position: center
+                    @media screen and ( max-width:700px  )
+                        height: 450px
+                        @media screen and ( max-width:600px  )
+                            height: 400px
+                            @media screen and ( max-width:500px  )
+                                height: 350px
+                                @media screen and ( max-width:375px  )
+                                    height: 300px
+                                    @media screen and ( max-width:350px  )
+                                        height: 250px
+                                        @media screen and ( max-width:300px  )
+                                            height: 200px
+            .article__title-title
+                font-size: 3rem
+                line-height: 3.6rem
+                @media screen and ( max-width:350px  )
+                    font-size: 2.4rem
+                    line-height: 3rem
+            .title-block__date
+                font-size: 1.2rem
+                line-height: 1.5rem
+                letter-spacing: 1px
+                text-transform: uppercase
+        .article__description-block
+            border-bottom: 4px solid #E6E6F0
+            .article__description
+                font-size: 1.6rem
+                line-height: 2.6rem
+            .article__description-title
+                background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                @media screen and ( max-width:350px  )
+                    font-size: 3rem
+                    line-height: 4rem
+            li
+                font-size: 1.8rem
+                line-height: 2.6rem
+                span
+                    color: #F0145A
+                    padding-left: 18px
+            .article__description-image 
+                margin: 0 auto
+                width: 640px
+                height: 398px
+                @media screen and ( max-width:750px  )
+                    height: 300px
+                    width: 480px
+                    @media screen and ( max-width:550px  )
+                        height: 180px
+                        width: 295px
+                        @media screen and ( max-width:350px  )
+                            height: 150px
+                            width: 265px
+                            @media screen and ( max-width:300px  )
+                                height: 120px
+                                width: 235px
+            .article__description-undertext
+                font-size: 1.4rem
+                line-height: 2.2rem
+                text-align: center
+        .article__social-holder
+            padding: 9px
+            border-radius: 12px
+            margin-right: 10px
+            background: #F5F5FA
+
+.article__social-holder:hover
+    background: #EDEDF7 !important
+    transition: 0.5s
+    cursor: pointer
 .card-padding
     padding-bottom: 200px
     @media screen and ( max-width:640px  )
         padding-bottom: 0px
-.publications__link:hover
-    color: #F0145A
-    transition: 0.5s
-.publications__card-link:hover
-    color: #F0145A
-    transition: 0.5s
 .publications__card-img img:hover
     transform: scale(1.1)
     transition: transform 0.5s
@@ -139,3 +254,7 @@
     background: #0085FF !important
     transition: 0.5s
     cursor: pointer
+.accent-hover:hover
+    color: #F0145A
+    transition: 0.5s
+    cursor: pointer            

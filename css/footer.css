@@ -155,27 +155,13 @@
   }
 }
 
-.footer__menu-apper-map:hover {
-  color: #F0145A;
-  transition: 0.5s;
-}
-
-.footer__menu-apper-link:hover {
-  color: #F0145A;
-  transition: 0.5s;
-}
-
-.footer__menu-bottom-num:hover {
-  color: #F0145A;
-  transition: 0.5s;
-}
-
-.footer__menu-bottom-mail:hover {
-  color: #F0145A;
-  transition: 0.5s;
-}
-
 #footer-facebook path:hover {
   fill: #F0145A;
   transition: 0.5s;
+}
+
+.accent-hover:hover {
+  color: #F0145A;
+  transition: 0.5s;
+  cursor: pointer;
 }

@@ -132,6 +132,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 620px) and (max-width: 350px) {
+  .wrapper__header .box__menu {
+    width: 205px;
+  }
+}
 .wrapper__header .box__menu .close {
   width: 32px;
   position: absolute;
@@ -188,6 +193,11 @@
     padding: 10px 4px;
   }
 }
+@media screen and (max-width: 620px) and (max-width: 300px) {
+  .wrapper__header .header__logo-after-slash {
+    display: none;
+  }
+}
 .wrapper__header .header__logo-after {
   font-size: 3.6rem;
   line-height: 4.4rem;
@@ -197,6 +207,11 @@
     font-size: 2rem;
     line-height: 2.4rem;
     padding-top: 10px;
+  }
+}
+@media screen and (max-width: 620px) and (max-width: 300px) {
+  .wrapper__header .header__logo-after {
+    display: none;
   }
 }
 .wrapper__header .header__menu {
@@ -325,26 +340,6 @@
   color: #ffffff;
 }
 
-.header__menu-apper-map:hover {
-  color: #F0145A;
-  transition: 0.5s;
-}
-
-.header__menu-map:hover {
-  color: #F0145A;
-  transition: 0.5s;
-}
-
-.header__menu-apper-num:hover {
-  color: #F0145A;
-  transition: 0.5s;
-}
-
-.header__menu-num:hover {
-  color: #F0145A;
-  transition: 0.5s;
-}
-
 #header-facebook:hover path {
   fill: #F0145A;
   transition: 0.5s;
@@ -359,11 +354,6 @@
   #header-facebook {
     display: none;
   }
-}
-
-.header__menu-link:hover {
-  color: #F0145A;
-  transition: 0.5s;
 }
 
 .header__menu-link::after {
@@ -420,14 +410,12 @@
   background-color: #F0145A;
 }
 
-.header__menu-link.activ-link {
+.accent-hover.activ-link {
   color: #F0145A !important;
 }
 
-.link-small-2.activ-link {
-  color: #F0145A !important;
-}
-
-.link-small-4.activ-link {
-  color: #F0145A !important;
+.accent-hover:hover {
+  color: #F0145A;
+  transition: 0.5s;
+  cursor: pointer;
 }
